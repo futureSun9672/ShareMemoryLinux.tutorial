@@ -1,2 +1,2 @@
 # Notebook.github.io
-*hi, programing practice share 
+Programing practice share 
