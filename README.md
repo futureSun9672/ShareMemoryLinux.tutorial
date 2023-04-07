@@ -18,6 +18,7 @@
  (1) shm_id  = shmget(key_t key, size_t size, int shmflg) 
 shm_id 共享内存id，系统区分不同共享内存
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/ca4b3995c9be40c6b2b29d8259adf4a0.png#pic_center)
+
 key  内存键值，共享内存的唯一标识
 
 size 内存大小，若创建填整数，若打开写0
@@ -30,7 +31,7 @@ shmflg主要和一些标志有关。
     IPC_CREAT   如果共享内存不存在，则创建一个共享内存，否则打开操作。
     IPC_EXCL     只有在共享内存不存在的时候，新的共享内存才建立，否则就产生错误。 
 
-> 如果单独使用IPC_CREAT，shmget()函数要么返回一个已经存在的共享内存的操作符，要么返回一个新建的共享内存的标识符。
+> 引用
 
     如果将IPC_CREAT和IPC_EXCL标志一起使用，shmget()将返回一个新建的共享内存的标识符；如果该共享内存已存在，或者返回-1。
 
